@@ -200,6 +200,7 @@ $(document).ready(function() {
                         if (courseId) {
                             console.log('Course ID from index page:', courseId);
                             loadCourseDetails(courseId);
+                            loadCourseComments(courseId);
                             $('#courseId').val(courseId);
                             $('#courseForm').attr('action', 'coursepage.php').submit(); 
                             $('#default-enroll-button').data('course-id', courseId);
